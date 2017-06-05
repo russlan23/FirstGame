@@ -1,0 +1,18 @@
+h1 {color:#be039d}
+h1:hover{ color:#fd9a82}
+#songTitle{background:grey }
+.greybg{background:#969696}
+.limec{color:lime}
+
+a:active{color: red}  // usualy a split of a sec
+a:visited{color: green}
+
+
+/** Main Frame */ 
+
+#mainFrame{
+	
+border-style: solid;
+border-width: 20px 4px 10px 4px;
+height:500px;
+}
