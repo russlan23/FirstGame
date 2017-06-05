@@ -8,10 +8,10 @@ a:active{color: red}  // usualy a split of a sec
 a:visited{color: green}
 
 
-/** Main Frame */ 
+/** Main Frame */
 
-#mainFrame{
-	
+#mainFrameSection{
+
 border-style: solid;
 border-width: 20px 4px 10px 4px;
 height:500px;
