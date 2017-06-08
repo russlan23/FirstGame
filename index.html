@@ -1,69 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WhiteSands Corps.</title>
-<meta name="author" content="Russlan Ramdowar">
-<meta name="description" content="Online Game">
-<meta name="keywords"
+	<title>WhiteSands Corps.</title>
+	<meta name="author" content="Russlan Ramdowar">
+	<meta name="description" content="Online Game">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords"
 	content="Technology, Web, Game, Fun,Future, Relax, People, Happy,Crazy, Trump, Putin, Kim, Funny, Intelligent, Connected">
+	<!-- <meta http-equiv="refresh" content="1">   Uncomment this and page will be refreshed every 1sec-->
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" >
 	<link rel="stylesheet" href="style/stylerules.css" type="text/css">
-
-<script src="js/intelligence.js"></script>
-
+	<!-- jQuery and Bootstrap dependencies -->
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/bootstrap-social/5.1.1/bootstrap-social.css"></script>
+	<script src="https://use.fontawesome.com/e73f44125b.js"></script>
 </head>
 
 <body>
-	<section id="intro">
-		<h1>Your Heros:</h1>
-		<p>Vladimir Putin, Donald Trump, Arnold Schwarzenegger, Kim Jong
-			Un , Angela Merkel, Emmanuel Macron, Xi Jinping</p>
-	</section>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Love Nukes</a>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
+          aria-hidden="true"></span> Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+            role="button" aria-haspopup="true" aria-expanded="false">
+            Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Appetizers</a></li>
+              <li><a href="#">Main Courses</a></li>
+              <li><a href="#">Desserts</a></li>
+              <li><a href="#">Drinks</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Specials</li>
+              <li><a href="#">Lunch Buffet</a></li>
+              <li><a href="#">Weekend Brunch</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
 
+	<header class="jumbotron" >
+		<div class="container">
+			<div class ="row row-header ">
+				<div class="col-xs-12 col-sm-5">
+					<h1><i class="fa fa-female" aria-hidden="true"></i> Your Heros: </h1>
+				</div>
+				<div class="col-xs-12 col-sm-7 ">
+					<div id ="herosList"> Vladimir Putin, Donald Trump, Kim Jong
+						Un , Angela Merkel, Emmanuel Macron, Xi Jinping and Arnold Schwarzenegger !
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
 
-	<section id="mainFrameSection">
-		<h1>ROUND 1</h1>
-		<h2>PUTIN VS MERKEL</h2>
-		<button type="button" name="startGame" onclick="startThrowingNukes();">Start Game</button>
-		<button type="button" name="endGame" onclick="stopThrowingNukes();">End Game</button>
-		<hr>
+	<div class="container">
+		<div class="row row-content" >
+			<div class= "col-xs-12 col-sm-12" >
+				<div  id="mainFrameSection">
+					<h1>ROUND 1</h1>
+					<h2>PUTIN VS MERKEL</h2>
+					<button type="button" class="btn btn-primary" onclick="startThrowingNukes();"> Start Game</button>
+					<button type="button" name="endGame" onclick="stopThrowingNukes();">End Game</button>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="container">
+		<div class="row ">
+			<div class="col-xs-12 col-sm-2 col-sm-offset-1">
+				<form action="pages/user.html" method="post"
+				enctype="multipart/form-data">
+				<fieldset>
+					<legend>Personal Feedback </legend>
+					<p>Please enter any feedback.</p>
+					<input type="text" name="feedback"
+					placeholder="Please enter your text here"> <br>
+				</fieldset>
+				<fieldset>
+					<legend>Attachments</legend>
+					<p>Select the File you want to upload</p>
+					<input type=file name="fileToUpload">
+				</fieldset>
+				<input type="submit">
+			</form>
+		</div>
+	</div>
+</div>
 
-	</section>
+<section>
+	<audio src="sounds/intro.mp3" controls>
+		<!--autoplay-->
+		<p>Sorry! Your browser does not support audio</p>
+		<!--only displayed if audio is not supportable -->
+	</audio>
+</section>
 
-	<!-- <p>
-		You may visit : <a href="https://www.youtube.com"><img
-			alt="Youtube" src="images/youtube.png" width="50px"
-			style="vertical-align: middle;"></a> <br> Or simply listen to
-		music in the browser:
-	</p> -->
+<footer class="row-footer">
+	<div class="container">
+		<div class="row ">
+			<div class="col-xs-12 col-sm-2 col-sm-offset-1">
+				<h5>Links</h5>
+				<ul class="list-unstyled">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-4">
+				<div class="nav navbar-nav" style="padding: 40px 10px;">
+					<a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+					<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+					<a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+					<a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<p style="padding:10px;"></p>
+				<p align=center>© Copyright 2017 WhiteSands Corp.</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-	<section>
-		<audio src="sounds/intro.mp3" controls>
-			<!--autoplay-->
-			<p>Sorry! Your browser does not support audio</p>
-			<!--only displayed if audio is not supportable -->
-		</audio>
-	</section>
+<script src="js/intelligence.js"></script>
 
-	<form action="pages/user.html" method="post"
-		enctype="multipart/form-data">
-
-		<fieldset>
-			<legend>Personal Feedback </legend>
-			<p>Please enter any feedback.</p>
-			<input type="text" name="feedback"
-				placeholder="Please enter your text here"> <br>
-		</fieldset>
-		<fieldset>
-			<legend>Attachments</legend>
-			<p>Select the File you want to upload</p>
-			<input type=file name="fileToUpload">
-		</fieldset>
-
-		<input type="submit">
-	</form>
 </body>
 
 </html>

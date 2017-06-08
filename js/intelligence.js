@@ -15,7 +15,7 @@ function moveNukes(){
   deltaY=3;
   deltaX=0;
   el=listNukes[0];
-  if (parseInt(el.style.top)>290) {
+  if (parseInt(el.style.top)>260) {
     stopThrowingNukes();
     alert("Game End !");
   }
